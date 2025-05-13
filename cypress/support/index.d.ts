@@ -1,5 +1,5 @@
 declare namespace Cypress {
-    interface Chainable {
+    interface Chainable<Subject = any> {
         getTransactionHeading(): Chainable<JQuery<HTMLElement>>;
     }
 }
